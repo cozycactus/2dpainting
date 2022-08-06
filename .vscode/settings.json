@@ -1,0 +1,5 @@
+{
+    "cmake.configureSettings": {
+        "CMAKE_PREFIX_PATH":"/home/cozy/Qt/6.3.1/gcc_64/"
+    }
+}
