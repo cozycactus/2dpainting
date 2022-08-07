@@ -9,7 +9,6 @@
 #include <QLabel>
 #include <QTimer>
 
-//! [0]
 Window::Window()
 {
     setWindowTitle(tr("2D Painting on OpenGL Widget"));
@@ -27,4 +26,3 @@ Window::Window()
     connect(timer, &QTimer::timeout, openGL, &GLWidget::animate);
     timer->start(20);
 }
-//! [0]
