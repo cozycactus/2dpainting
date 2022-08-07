@@ -12,7 +12,7 @@
 //! [0]
 Window::Window()
 {
-    setWindowTitle(tr("2D Painting on Native and OpenGL Widgets"));
+    setWindowTitle(tr("2D Painting on OpenGL Widget"));
 
     GLWidget *openGL = new GLWidget(&helper, this);
     QLabel *openGLLabel = new QLabel(tr("OpenGL"));
