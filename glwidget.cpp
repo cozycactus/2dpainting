@@ -23,9 +23,14 @@ void GLWidget::animate()
 
 void GLWidget::paintEvent(QPaintEvent *event)
 {
+    auto start = std::chrono::high_resolution_clock::now();
+
     QPainter painter;
     painter.begin(this);
     painter.setRenderHint(QPainter::Antialiasing);
     helper->paint(&painter, event, elapsed);
     painter.end();
+    auto end = std::chrono::high_resolution_clock::now();
+    std::chrono::duration<double, std::milli> ms_double = end - start;
+    qDebug() << ms_double.count() << "ms\n";
 }

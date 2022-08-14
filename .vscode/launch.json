@@ -8,7 +8,7 @@
             "name": "C++ Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceRoot}/a.out",
+            "program": "${workspaceRoot}/build/2dpainting",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",

@@ -5,10 +5,14 @@
 
 #include <QApplication>
 #include <QSurfaceFormat>
+#include <QLoggingCategory>
 
 int main(int argc, char *argv[])
 {
     QApplication app(argc, argv);
+
+    QLoggingCategory::defaultCategory()->setEnabled(QtDebugMsg, true);
+
 
     QSurfaceFormat fmt;
     fmt.setSamples(4);
